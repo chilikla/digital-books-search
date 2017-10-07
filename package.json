@@ -1,0 +1,22 @@
+{
+  "name": "digital-books-search",
+  "version": "1.0.0",
+  "description": "Hebrew Digital Books Search Engine",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.1",
+    "puppeteer": "^0.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "digital",
+    "books",
+    "Kindle",
+    "Hebrew"
+  ],
+  "author": "Chilik Laub",
+  "license": "ISC"
+}
