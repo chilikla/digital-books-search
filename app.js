@@ -13,7 +13,19 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-    res.render('index');
+  res.render('index');
+});
+
+app.get('/search', function(req, res) {
+  const search = require('./app/search.js');
+  search(req.query.book, function(err, results) {
+    if (err) {
+      res.send('fail');
+    }
+    else {
+      res.send(JSON.stringify(results));
+    }
+  });
 });
 
 app.listen(8080);
