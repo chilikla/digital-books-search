@@ -3,6 +3,7 @@ const cookieParser = require('cookie-parser');
 const cookieSession = require('express-session');
 const ejs = require('ejs');
 const express = require('express');
+const morgan = require('morgan');
 
 const app = express();
 app.use('/public', express.static('public'));
