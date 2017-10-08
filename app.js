@@ -11,6 +11,7 @@ app.set('views', 'views')
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(morgan('dev'));
 
 app.get('/', function(req, res) {
   res.render('index');
